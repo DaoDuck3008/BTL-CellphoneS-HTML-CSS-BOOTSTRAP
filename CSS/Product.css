@@ -86,3 +86,10 @@ header {
   border: 1px solid black;
   object-fit: cover;
 }
+
+.carousel-item img {
+  width: 100%;
+  height: 360px; /* ép chiều cao */
+  object-fit: contain; /* hoặc cover */
+  background: #000; /* thêm nền đen để dễ nhìn */
+}
