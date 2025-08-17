@@ -33,6 +33,8 @@ header {
 
 .carousel-item img {
   object-fit: contain;
+  max-width: 100%; /* Ảnh không vượt quá khung */
+  max-height: 100%;
 }
 
 .thumb {
