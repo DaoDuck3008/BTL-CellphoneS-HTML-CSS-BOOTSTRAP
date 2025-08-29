@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Đăng nhập - Smember</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        img {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+        }
+
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .login-container {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 40px;
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-card h4 {
+            font-weight: 600;
+            color: #e63946;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .btn-login {
+            background-color: #e63946;
+            border: none;
+        }
+
+        .btn-login:hover {
+            background-color: #c92d3b;
+        }
+
+        .form-control:focus {
+            box-shadow: none;
+            border-color: #e63946;
+        }
+
+        .brand-logo {
+            display: block;
+            margin: 0 auto 15px;
+            width: 60px;
+        }
+
+        .text-link {
+            color: #e63946;
+            text-decoration: none;
+        }
+
+        .text-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="login-card">
+
+
+            <img src="data:image/png;base64,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"
+                alt="Logo" class="brand-logo">
+
+            <h4>Đăng nhập Smember</h4>
+            <form>
+                <div class="email">
+                    <label for="email" class="form-label">Email hoặc Số điện thoại</label>
+                    <input type="text" class="form-control" id="email" placeholder="Nhập email hoặc số điện thoại">
+                </div>
+                <div class="pass">
+                    <label for="password" class="form-label">Mật khẩu</label>
+                    <input type="password" class="form-control" id="password" placeholder="Nhập mật khẩu">
+                </div>
+                <div class="ghi nho">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="rememberMe">
+                        <label class="form-check-label" for="rememberMe">Ghi nhớ</label>
+                    </div>
+                    <a href="#" class="text-link">Quên mật khẩu?</a>
+                </div>
+                <button type="submit" class="btn btn-login w-100 text-white">Đăng nhập</button>
+            </form>
+            <hr>
+            <p class="text-center mb-0">Chưa có tài khoản?
+                <a href="Dangky.html" class="text-link">Đăng ký ngay</a>
+            </p>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
