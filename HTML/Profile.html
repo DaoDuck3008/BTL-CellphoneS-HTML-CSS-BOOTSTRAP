@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tri ân khách hàng</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+    <style>
+      body {
+        background-color: #f8f9fa;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .sidebar {
+        min-height: 100vh;
+        background-color: #fff;
+        border-right: 1px solid #e0e0e0;
+        box-shadow: 2px 0 6px rgba(0, 0, 0, 0.05);
+        border-radius: 0 20px 20px 0; /* bo tròn góc */
+      }
+      .sidebar .nav-link {
+        color: #555;
+        padding: 12px 15px;
+        border-bottom: 1px solid #eee;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .sidebar .nav-link:last-child {
+        border-bottom: none;
+      }
+      .sidebar .nav-link:hover {
+        background-color: #f1f1f1;
+        color: #e63946;
+      }
+      .sidebar .nav-link.active {
+        background-color: #ffeaea;
+        color: #e63946;
+        font-weight: 600;
+      }
+
+      .card-custom {
+        border: none;
+        border-radius: 20px;
+        padding: 20px;
+        background: #fff;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+        margin-bottom: 20px;
+      }
+      .order-item {
+        border-bottom: 1px solid #eee;
+        padding: 12px 0;
+      }
+      .order-item:last-child {
+        border-bottom: none;
+      }
+
+      .quick-access {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+      }
+      .quick-access .item {
+        background: #fef2f2;
+        border-radius: 16px;
+        padding: 20px;
+        text-align: center;
+        transition: 0.3s;
+        cursor: pointer;
+      }
+      .quick-access .item:hover {
+        background: #ffeaea;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transform: translateY(-2px);
+      }
+      .quick-access i {
+        font-size: 24px;
+        color: #e63946;
+        margin-bottom: 8px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Sidebar -->
+        <div class="col-md-3 col-lg-2 sidebar p-4">
+          <h1 class="mb-4 text-danger fw-bold">Smember</h1>
+          <nav class="nav flex-column">
+            <a class="nav-link active" href="#"
+              ><i class="bi bi-speedometer2"></i> Tổng quan</a
+            >
+            <a class="nav-link" href="#"
+              ><i class="bi bi-bag-check"></i> Lịch sử mua hàng</a
+            >
+            <a class="nav-link" href="#"
+              ><i class="bi bi-tools"></i> Tra cứu bảo hành</a
+            >
+            <a class="nav-link" href="#"
+              ><i class="bi bi-star"></i> Hạng thành viên & ưu đãi</a
+            >
+            <a class="nav-link" href="#"
+              ><i class="bi bi-mortarboard"></i> Ưu đãi S-Student & S-Teacher</a
+            >
+            <a class="nav-link" href="#"
+              ><i class="bi bi-people"></i> Giới thiệu bạn bè</a
+            >
+            <a class="nav-link" href="#"
+              ><i class="bi bi-person"></i> Thông tin tài khoản</a
+            >
+            <a class="nav-link" href="#"
+              ><i class="bi bi-geo-alt"></i> Tìm kiếm cửa hàng</a
+            >
+          </nav>
+        </div>
+
+        <div class="col-md-9 col-lg-10 p-4">
+          <!-- Header user info -->
+          <div
+            class="card-custom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3"
+          >
+            <div class="d-flex align-items-center gap-3">
+              <!-- Avatar -->
+              <img
+                src="https://anhcute.net/wp-content/uploads/2024/08/Hinh-anh-chibi-chuot-lang-nuoc-ngoi-thien.jpg"
+                alt="Avatar"
+                class="rounded-circle"
+                width="70"
+                height="70"
+              />
+              <div>
+                <h5 class="fw-bold mb-1">Đào Đức Đụt</h5>
+                <span class="badge bg-danger me-1">S-MEM</span>
+                <span class="badge bg-success">S-Student</span>
+                <p class="mb-0 text-muted">Cập nhật lại sau 01/01/2026</p>
+              </div>
+            </div>
+            <div class="text-center text-md-end">
+              <h6 class="mb-1">Tổng số đơn đã mua: <strong>1</strong></h6>
+              <h6 class="mb-0">
+                Tổng tiền tích lũy:
+                <strong class="text-danger">17.942.000đ</strong>
+              </h6>
+            </div>
+          </div>
+
+          <div class="card-custom quick-access">
+            <div class="item">
+              <i class="bi bi-star-fill"></i>
+              <p class="mb-0 fw-semibold">Hạng thành viên</p>
+            </div>
+            <div class="item">
+              <i class="bi bi-ticket-perforated"></i>
+              <p class="mb-0 fw-semibold">Mã giảm giá</p>
+            </div>
+            <div class="item">
+              <i class="bi bi-bag-check-fill"></i>
+              <p class="mb-0 fw-semibold">Lịch sử mua hàng</p>
+            </div>
+            <div class="item">
+              <i class="bi bi-geo-alt-fill"></i>
+              <p class="mb-0 fw-semibold">Sổ địa chỉ</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-8">
+              <div class="card-custom">
+                <h6 class="fw-bold mb-3">
+                  <i class="bi bi-box-seam"></i> Đơn hàng gần đây
+                </h6>
+                <div class="order-item">
+                  <strong>Đơn hàng #024342S2408000131</strong> - 03/08/2024
+                  <p class="mb-1">
+                    Laptop Lenovo LOQ i5-12450HX / 12GB / 512GB / VGA 4GB
+                  </p>
+                  <span class="badge bg-success">Đã nhận hàng</span>
+                  <span class="float-end fw-bold text-danger">17.942.000đ</span>
+                </div>
+                <div class="order-item">
+                  <strong>Đơn hàng #024342S2408000131</strong> - 03/08/2024
+                  <p class="mb-1">
+                    Laptop Lenovo LOQ i5-12450HX / 12GB / 512GB / VGA 4GB
+                  </p>
+                  <span class="badge bg-warning text-dark">Đã xác nhận</span>
+                  <span class="float-end fw-bold text-danger">17.942.000đ</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card-custom text-center">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/992/992651.png"
+                  class="img-fluid mb-3"
+                  width="80"
+                />
+                <p class="mb-2 text-muted">Bạn chưa có ưu đãi nào.</p>
+                <a href="#" class="btn btn-outline-danger btn-sm px-3"
+                  >Xem sản phẩm</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
