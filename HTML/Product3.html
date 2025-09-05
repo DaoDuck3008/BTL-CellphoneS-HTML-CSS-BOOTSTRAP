@@ -410,8 +410,11 @@
               Giá sản phẩm
             </p>
             <div class="d-flex">
-              <h3>48.390.000đ</h3>
-              <p class="text-muted text-decoration-line-through ms-3">
+              <h3 id="currentPrice">48.390.000đ</h3>
+              <p
+                class="text-muted text-decoration-line-through ms-3"
+                id="oldPrice"
+              >
                 49.990.000đ
               </p>
             </div>
@@ -427,11 +430,13 @@
                 class="btn-check"
                 name="storage"
                 id="storage1"
+                data-price="48390000"
+                data-oldprice="49990000"
                 autocomplete="off"
                 checked
               />
               <label class="btn px-4 py-3 mx-1" for="storage1"
-                >10CPU - 10GPU<br />24GB - 1TB</label
+                ><b>10CPU - 10GPU<br />24GB - 1TB</b></label
               >
 
               <input
@@ -439,31 +444,37 @@
                 class="btn-check"
                 name="storage"
                 id="storage2"
+                data-price="44090000"
+                data-oldprice="44990000"
                 autocomplete="off"
               />
               <label class="btn px-4 py-3 mx-1" for="storage2"
-                >10CPU - 10GPU<br />16GB - 1TB</label
+                ><b>10CPU - 10GPU<br />16GB - 1TB</b></label
               >
 
               <input
                 type="radio"
                 class="btn-check"
                 name="storage"
+                data-price="43990000"
+                data-oldprice="44990000"
                 id="storage3"
                 autocomplete="off"
               />
               <label class="btn px-4 py-3 mx-1" for="storage3"
-                >10CPU - 10GPU<br />24GB - 512GB</label
+                ><b>10CPU - 10GPU<br />24GB - 512GB</b></label
               >
               <input
                 type="radio"
                 class="btn-check"
                 name="storage"
                 id="storage4"
+                data-price="36990000"
+                data-oldprice="39990000"
                 autocomplete="off"
               />
               <label class="btn px-4 py-3 mx-1" for="storage4"
-                >10CPU - 10GPU<br />16GB - 512GB</label
+                ><b>10CPU - 10GPU<br />16GB - 512GB</b></label
               >
             </div>
 
@@ -514,7 +525,6 @@
               >
             </div>
           </div>
-
           <!-- Chi nhánh các cửa hàng -->
           <div class="container mt-2">
             <div class="pt-3 ps-2 bg-light border rounded row">
