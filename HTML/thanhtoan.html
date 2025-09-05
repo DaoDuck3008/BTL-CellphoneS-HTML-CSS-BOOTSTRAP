@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thanh toán CellphoneS</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="CSS/gioHang.css" />
+  </head>
+  <body>
+    <header class="bg-danger text-white py-2">
+      <div
+        class="container d-flex justify-content-between align-items-center my-custom-text"
+      >
+        <a href="#" class="navbar-brand">
+          <img
+            src="Images/gioHang/Logo.png"
+            alt="CellphoneS Logo"
+            style="height: 50px"
+          />
+        </a>
+
+        <div class="header-item">
+          <i class="fa-solid fa-location-dot me-1"></i>
+          <a href="#" class="text-white text-decoration-none">
+            Xem giá tại <br />
+            Hà Nội
+          </a>
+        </div>
+
+        <div class="search-bar">
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Bạn cần tìm gì?"
+            />
+            <span class="input-group-text"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></span>
+          </div>
+        </div>
+
+        <div class="header-item">
+          <i class="fa-solid fa-phone me-1"></i>
+          <a href="#" class="text-white text-decoration-none">
+            Gọi mua hàng<br />
+            1800.2097
+          </a>
+        </div>
+
+        <div class="header-item">
+          <i class="fa-solid fa-shop me-1"></i>
+          <a href="#" class="text-white text-decoration-none">
+            Cửa hàng<br />
+            gần bạn
+          </a>
+        </div>
+
+        <div class="header-item">
+          <i class="fa-solid fa-box-open me-1"></i>
+          <a href="#" class="text-white text-decoration-none">
+            Tra cứu<br />
+            đơn hàng
+          </a>
+        </div>
+
+        <div class="header-item">
+          <i class="fa-solid fa-cart-shopping me-1"></i>
+          <a href="#" class="text-white text-decoration-none">
+            Giỏ <br />
+            hàng
+          </a>
+        </div>
+
+        <div class="header-item">
+          <i class="fa-solid fa-circle-question me-1"></i>
+          <a href="#" class="text-white text-decoration-none"> Hải </a>
+        </div>
+      </div>
+    </header>
+    <main class="bg-light min-vh-100">
+      <div class="top-bar py-3 border-bottom">
+        <div class="custom-container d-flex align-items-center">
+          <a href="#" class="text-dark me-3"
+            ><i class="fa-solid fa-arrow-left fs-5"></i
+          ></a>
+          <h5 class="mb-0 fw-bold">Thông tin</h5>
+        </div>
+      </div>
+
+      <div class="custom-container mt-4 mb-3 d-flex justify-content-center">
+        <div class="payment-tabs d-flex">
+          <button class="btn payment-tab active">
+            <span class="tab-number">1.</span> Thông tin
+          </button>
+          <button class="btn payment-tab">
+            <span class="tab-number">2.</span> Thanh toán
+          </button>
+        </div>
+      </div>
+
+      <div class="custom-container">
+        <div class="card p-3 mb-4 shadow-sm rounded-3">
+          <h6 class="mb-3 fw-bold">THÔNG TIN SẢN PHẨM</h6>
+          <div class="d-flex align-items-center">
+            <img
+              src="Images/gioHang/macbook.webp"
+              alt="MacBook Pro"
+              class="product-image-small me-3"
+            />
+            <div class="flex-grow-1">
+              <h6 class="mb-1 product-name-small">
+                MacBook Pro 14 M4 10CPU 10GPU 24GB 512GB | Chính hãng Apple Việt
+                Nam-Bắc
+              </h6>
+              <span class="text-danger fw-bold me-2">43.290.000đ</span>
+              <span class="text-muted text-decoration-line-through"
+                >44.990.000đ</span
+              >
+            </div>
+            <span class="text-secondary">Số lượng: 1</span>
+          </div>
+        </div>
+
+        <div class="card p-3 mb-4 shadow-sm rounded-3">
+          <h6 class="mb-3 fw-bold">THÔNG TIN KHÁCH HÀNG</h6>
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <div class="d-flex align-items-center">
+              <span class="fw-bold me-2">Phạm Ngọc Hải</span>
+              <span class="badge bg-danger">S-NULL</span>
+            </div>
+            <span>0705456584</span>
+          </div>
+          <div class="mb-3">
+            <span class="text-secondary d-block">EMAIL</span>
+            <span>phamhai040805@gmail.com</span>
+          </div>
+          <p class="text-muted small">
+            (*) Hóa đơn VAT sẽ được gửi qua email này
+          </p>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              id="receive-email"
+            />
+            <label class="form-check-label text-secondary" for="receive-email">
+              Nhận email thông báo và ưu đãi từ CellphoneS
+            </label>
+          </div>
+        </div>
+
+        <div class="card p-3 mb-4 shadow-sm rounded-3">
+          <h6 class="mb-3 fw-bold">THÔNG TIN NHẬN HÀNG</h6>
+          <div class="d-flex mb-3">
+            <div class="form-check me-4">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="delivery-method"
+                id="receive-store"
+                checked
+              />
+              <label class="form-check-label" for="receive-store">
+                Nhận tại cửa hàng
+              </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="delivery-method"
+                id="receive-home"
+              />
+              <label class="form-check-label" for="receive-home">
+                Giao hàng tận nơi
+              </label>
+            </div>
+          </div>
+          <div class="row g-3 mb-3">
+            <div class="col-md-6">
+              <label class="form-label text-secondary">TỈNH / THÀNH PHỐ</label>
+              <select class="form-select">
+                <option selected>Hà Nội</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label text-secondary">Chọn quận/huyện</label>
+              <select class="form-select">
+                <option selected>Chọn quận/huyện</option>
+              </select>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label text-secondary"
+              >Chọn địa chỉ của cửa hàng</label
+            >
+            <select class="form-select">
+              <option selected>Chọn địa chỉ của cửa hàng</option>
+            </select>
+          </div>
+          <div>
+            <label class="form-label text-secondary"
+              >Ghi chú khác (nếu có)</label
+            >
+            <textarea class="form-control" rows="2"></textarea>
+          </div>
+
+          <hr class="mt-4 mb-4" />
+          <h6 class="mb-3 fw-bold">
+            Quý khách có muốn xuất hóa đơn công ty không?
+          </h6>
+          <div class="d-flex">
+            <div class="form-check me-4">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="vat-invoice"
+                id="vat-yes"
+              />
+              <label class="form-check-label" for="vat-yes">Có</label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="vat-invoice"
+                id="vat-no"
+                checked
+              />
+              <label class="form-check-label" for="vat-no">Không</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="fixed-checkout-bar">
+      <div class="custom-container">
+        <div class="card p-3 shadow-sm rounded-3">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-secondary fw-normal fs-5"
+              >Tổng tiền tạm tính:</span
+            >
+            <span class="text-danger fw-bold fs-4">43.290.000đ</span>
+          </div>
+          <div class="d-grid gap-2">
+            <button class="btn btn-danger btn-lg rounded" type="button">
+              Tiếp tục
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
