@@ -17,6 +17,9 @@ thumbnails.forEach((thumb, index) => {
   });
 });
 
+
+
+// Back to top
 const btn = document.getElementById("backToTop");
 
 window.addEventListener("scroll", () => {
