@@ -12,7 +12,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
-    <link rel="stylesheet" href="CSS/gioHang.css" />
+    <link rel="stylesheet" href="../CSS/gioHang.css" />
   </head>
   <body>
     <header class="bg-danger text-white py-2">
@@ -21,7 +21,7 @@
       >
         <a href="#" class="navbar-brand">
           <img
-            src="Images/gioHang/Logo.png"
+            src="../Images/gioHang/Logo.png"
             alt="CellphoneS Logo"
             style="height: 50px"
           />
@@ -96,23 +96,12 @@
         </div>
       </div>
 
-      <div class="custom-container mt-4 mb-3 d-flex justify-content-center">
-        <div class="payment-tabs d-flex">
-          <button class="btn payment-tab active">
-            <span class="tab-number">1.</span> Thông tin
-          </button>
-          <button class="btn payment-tab">
-            <span class="tab-number">2.</span> Thanh toán
-          </button>
-        </div>
-      </div>
-
-      <div class="custom-container">
+      <div class="custom-container mt-3">
         <div class="card p-3 mb-4 shadow-sm rounded-3">
           <h6 class="mb-3 fw-bold">THÔNG TIN SẢN PHẨM</h6>
           <div class="d-flex align-items-center">
             <img
-              src="Images/gioHang/macbook.webp"
+              src="../Images/gioHang/macbook.webp"
               alt="MacBook Pro"
               class="product-image-small me-3"
             />
@@ -253,9 +242,13 @@
             <span class="text-danger fw-bold fs-4">43.290.000đ</span>
           </div>
           <div class="d-grid gap-2">
-            <button class="btn btn-danger btn-lg rounded" type="button">
+            <a
+              href="./HomePage.html"
+              class="btn btn-danger btn-lg rounded"
+              type="button"
+            >
               Tiếp tục
-            </button>
+            </a>
           </div>
         </div>
       </div>
